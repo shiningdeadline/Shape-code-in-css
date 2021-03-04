@@ -1,0 +1,26 @@
+/* name the class as folder-shape */
+/* example: <div class="folder-shape"></div> */
+/* or you can also change the name of the class in html and css*/
+/* you can also change the code */
+
+.folder-shape {
+      background-color:none;
+      width: 125px;
+      height: 0;
+      position: relative;
+      border-right: 60px solid transparent;
+      border-bottom: 50px solid #36A9E8;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+.folder-shape::after {
+      width: 230px;
+      height: 130px;
+      background-color: #2EC7FE;
+      position: absolute;
+      border-radius: 15px 15px 15px 15px;
+      bottom: -155px;
+      left: 0px;
+      content: '';
+      z-index: 3;
+}
